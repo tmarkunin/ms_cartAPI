@@ -4,6 +4,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 // Mongoose Models
 var Product = require('./models/product');
+
+console.log("CartAPI started");
  
 // necessary for running APIs locally
 var allowCrossDomain = function(req, res, next) {
@@ -43,6 +45,8 @@ if(process.env.VCAP_SERVICES){
 } else {
 	uri = process.env.MONGO_URI;
 }
+console.log("URI: " + uri);
+
 mongoose.connect(uri);
  
 // Set up /api router

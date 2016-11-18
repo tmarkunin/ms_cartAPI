@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A Cart Management Service for our store",
   "scripts": {
-    "start": "node cartApi.js"
+    "start": "node cartAPI.js"
   },
   "dependencies": {
     "body-parser": "^1.13.1",
